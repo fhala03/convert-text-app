@@ -5,7 +5,7 @@ import React from "react";
 const Header = () => {
   return (
     <header
-      className={cn`sticky inset-x-0 top-0 z-30 w-full bg-transparent transition-all`}
+      className={cn`sticky inset-x-0 top-0 z-30 w-full bg-background transition-all`}
     >
       <div className="maincol flex h-14 items-center justify-between py-4">
         <div className="flex items-center gap-8">

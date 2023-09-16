@@ -18,11 +18,11 @@ const HoverCard = ({ title, desc }: HoverCardProps) => {
   }
   return (
     <div
-      className="group relative max-w-full rounded-xl border bg-white/10 px-8 py-6 shadow-2xl backdrop-blur"
+      className="group relative max-w-full rounded-md bg-secondary px-8 py-4 text-foreground"
       onMouseMove={handleMouseMove}
     >
       <motion.div
-        className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none absolute -inset-px rounded-md opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           background: useMotionTemplate`
             radial-gradient(
@@ -33,18 +33,13 @@ const HoverCard = ({ title, desc }: HoverCardProps) => {
           `,
         }}
       />
-      <div>
-        <h3 className="text-base font-semibold leading-7 text-foreground">
-          Convert to
-        </h3>
+
+      <div className="flex flex-col space-y-4">
+        <h3 className="text-base font-semibold text-primary">Convert to</h3>
         <div className="mt-2 flex items-center gap-x-2">
-          <span className="text-foreground/80 text-4xl font-bold tracking-tight">
-            {title}
-          </span>
+          <span className="text-4xl font-bold tracking-tight">{title}</span>
         </div>
-        <p className="text-foreground/50 mt-6 text-base font-medium leading-7">
-          {desc}
-        </p>
+        <p className="mt-6 text-sm font-medium leading-6">{desc}</p>
       </div>
     </div>
   );

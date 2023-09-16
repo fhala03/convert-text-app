@@ -4,6 +4,7 @@ import Head from "next/head";
 import "@/styles/globals.css";
 import type { ReactElement, ReactNode } from "react";
 import type { NextPage } from "next";
+import { Toaster } from "@/components/ui/toaster";
 
 export type NextPageWithLayout<P = NonNullable<unknown>, IP = P> = NextPage<
   P,
@@ -24,15 +25,16 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <>
       <Head>
-        <title>LinkTab</title>
+        <title>Convert Text</title>
         <meta
           name="description"
-          content="LinkTab is a simple web app that allows you to save and organize web links. App is built with the T3 stack."
+          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {layoutForPage(<Component {...pageProps} />)}
+      <Toaster />
     </>
   );
 }
