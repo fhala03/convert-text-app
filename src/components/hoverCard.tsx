@@ -18,7 +18,7 @@ const HoverCard = ({ title, desc }: HoverCardProps) => {
   }
   return (
     <div
-      className="group relative max-w-full rounded-md bg-secondary px-8 py-4 text-foreground"
+      className="group relative max-w-full h-[240px] rounded-md bg-secondary px-8 py-4 text-foreground"
       onMouseMove={handleMouseMove}
     >
       <motion.div

@@ -11,7 +11,12 @@ const Cards = () => {
           desc="If you want to italicise your font, this is a great tool. Type out your normal text and see it automatically write on a slant, which you can copy and paste where you want."
         />
       </Link>
-
+      <Link href={"/morse-code"}>
+        <HoverCard
+          title="Morse Code"
+          desc="Whether you are looking to translate morse code messages into simple english or the other way around, this online translation generator can do just that."
+        />
+      </Link>
       <Link href={"/reverse"}>
         <HoverCard
           title="Reverse"

@@ -126,6 +126,21 @@ const UnderlinedText = () => {
     });
   };
 
+  const UnderlineText = () => {
+    const underlinedText = text
+      .split("")
+      .map((char) => underlineCharacter(char))
+      .join("");
+
+    setText(underlinedText);
+
+    toast({
+      title: "👍 Text Underlined!",
+      description: "Your text has been manually underlined.",
+      duration: 2000,
+    });
+  };
+
   const copyToClipboard = () => {
     navigator.clipboard
       .writeText(text)
@@ -199,6 +214,7 @@ const UnderlinedText = () => {
             Clear
           </Button>
           <Button onClick={copyToClipboard}>Copy to Clipboard</Button>
+          <Button onClick={UnderlineText}>Convert</Button>
         </div>
       </div>
     </section>

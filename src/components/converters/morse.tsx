@@ -6,82 +6,92 @@ import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 import { toast } from "../ui/use-toast";
 
-const ItalicText = () => {
+const MorseCodeText = () => {
   const [text, setText] = useState("");
 
-  const stylizeText = () => {
-    const stylizedText = text
-      .split("")
-      .map((char) => stylizeCharacter(char))
-      .join("");
-
-    setText(stylizedText);
-
-    toast({
-      title: "🚀 Text Stylized!",
-      description: "Your text has been stylized.",
-      duration: 2000,
-    });
-  };
-
-  // Define a function to map characters to their stylized equivalents
-  const stylizeCharacter = (char: string): string => {
-    const letterMappings: Record<string, string> = {
-      a: "𝘢",
-      b: "𝘣",
-      c: "𝘤",
-      d: "𝘥",
-      e: "𝘦",
-      f: "𝘧",
-      g: "𝘨",
-      h: "𝘩",
-      i: "𝘪",
-      j: "𝘫",
-      k: "𝘬",
-      l: "𝘭",
-      m: "𝘮",
-      n: "𝘯",
-      o: "𝘰",
-      p: "𝘱",
-      q: "𝘲",
-      r: "𝘳",
-      s: "𝘴",
-      t: "𝘵",
-      u: "𝘶",
-      v: "𝘷",
-      w: "𝘸",
-      x: "𝘹",
-      y: "𝘺",
-      z: "𝘻",
-      A: "𝘈",
-      B: "𝘉",
-      C: "𝘊",
-      D: "𝘋",
-      E: "𝘌",
-      F: "𝘍",
-      G: "𝘎",
-      H: "𝘏",
-      I: "𝘐",
-      J: "𝘑",
-      K: "𝘒",
-      L: "𝘓",
-      M: "𝘔",
-      N: "𝘕",
-      O: "𝘖",
-      P: "𝘗",
-      Q: "𝘘",
-      R: "𝘙",
-      S: "𝘚",
-      T: "𝘛",
-      U: "𝘜",
-      V: "𝘝",
-      W: "𝘞",
-      X: "𝘟",
-      Y: "𝘠",
-      Z: "𝘡",
+  const charToMorseCode = (char: string): string => {
+    const morseCodeMappings: Record<string, string> = {
+      a: ".-",
+      b: "-...",
+      c: "-.-.",
+      d: "-..",
+      e: ".",
+      f: "..-.",
+      g: "--.",
+      h: "....",
+      i: "..",
+      j: ".---",
+      k: "-.-",
+      l: ".-..",
+      m: "--",
+      n: "-.",
+      o: "---",
+      p: ".--.",
+      q: "--.-",
+      r: ".-.",
+      s: "...",
+      t: "-",
+      u: "..-",
+      v: "...-",
+      w: ".--",
+      x: "-..-",
+      y: "-.--",
+      z: "--..",
+      A: ".-",
+      B: "-...",
+      C: "-.-.",
+      D: "-..",
+      E: ".",
+      F: "..-.",
+      G: "--.",
+      H: "....",
+      I: "..",
+      J: ".---",
+      K: "-.-",
+      L: ".-..",
+      M: "--",
+      N: "-.",
+      O: "---",
+      P: ".--.",
+      Q: "--.-",
+      R: ".-.",
+      S: "...",
+      T: "-",
+      U: "..-",
+      V: "...-",
+      W: ".--",
+      X: "-..-",
+      Y: "-.--",
+      Z: "--..",
+      "0": "-----",
+      "1": ".----",
+      "2": "..---",
+      "3": "...--",
+      "4": "....-",
+      "5": ".....",
+      "6": "-....",
+      "7": "--...",
+      "8": "---..",
+      "9": "----.",
+      " ": " ", // Space
     };
 
-    return letterMappings[char] ?? char;
+    return morseCodeMappings[char] ?? char;
+  };
+
+  const convertToMorseCode = () => {
+    const morseCodeText = text
+      .split("")
+      .map((char) => charToMorseCode(char))
+      .join(" ");
+
+    setText(morseCodeText);
+
+    toast({
+      title: "🚀 Text Converted to Morse Code!",
+      description: "Your text has been converted to Morse code.",
+      duration: 2000,
+    });
   };
 
   const downloadTextFile = () => {
@@ -89,15 +99,16 @@ const ItalicText = () => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "textfile.txt";
+    a.download = "morsecode.txt";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 
     toast({
-      title: "📥 Text Downloaded!",
-      description: "Your text has been downloaded as 'textfile.txt'.",
+      title: "📥 Morse Code Downloaded!",
+      description:
+        "Your Morse code text has been downloaded as 'morsecode.txt'.",
       duration: 2000,
     });
   };
@@ -107,14 +118,14 @@ const ItalicText = () => {
       .writeText(text)
       .then(() => {
         toast({
-          title: "🚀 Text Copied!",
+          title: "🚀 Morse Code Copied!",
           description:
-            "You've successfully copied the text to your clipboard. Now, go paste it like a pro!",
+            "You've successfully copied the Morse code to your clipboard. Now, go paste it like a pro!",
           duration: 3000,
         });
       })
       .catch((error) => {
-        console.error("Failed to copy text to clipboard:", error);
+        console.error("Failed to copy Morse code to clipboard:", error);
       });
   };
 
@@ -122,12 +133,12 @@ const ItalicText = () => {
     const handlePaste = async () => {
       try {
         const clipboardText = await navigator.clipboard.readText();
-        const stylizedText = clipboardText
+        const morseCodeText = clipboardText
           .split("")
-          .map((char) => stylizeCharacter(char))
-          .join("");
-        setText(stylizedText);
-        await navigator.clipboard.writeText(stylizedText);
+          .map((char) => charToMorseCode(char))
+          .join(" ");
+        setText(morseCodeText);
+        await navigator.clipboard.writeText(morseCodeText);
       } catch (error) {
         console.error("Failed to read or write clipboard data:", error);
       }
@@ -154,10 +165,10 @@ const ItalicText = () => {
       <div className="flex items-center justify-between">
         <div className="flex gap-4">
           <Label className="text-sm text-foreground/50" htmlFor="inputarea">
-            Word Count : {text.split(/\s+/).filter(Boolean).length}
+            Word Count: {text.split(/\s+/).filter(Boolean).length}
           </Label>
           <Label className="text-sm text-foreground/50" htmlFor="inputarea">
-            Character Count : {text.length}
+            Character Count: {text.length}
           </Label>
         </div>
         <div className="flex gap-2">
@@ -166,8 +177,8 @@ const ItalicText = () => {
             onClick={() => {
               setText("");
               toast({
-                title: "🧹 Text Cleared!",
-                description: "You've cleared the text area.",
+                title: "🧹 Morse Code Cleared!",
+                description: "You've cleared the Morse code text area.",
                 duration: 2000,
               });
             }}
@@ -175,11 +186,11 @@ const ItalicText = () => {
             Clear
           </Button>
           <Button onClick={copyToClipboard}>Copy to Clipboard</Button>
-          <Button onClick={stylizeText}>Convert</Button>
+          <Button onClick={convertToMorseCode}>Convert</Button>
         </div>
       </div>
     </section>
   );
 };
 
-export default ItalicText;
+export default MorseCodeText;

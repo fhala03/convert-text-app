@@ -108,7 +108,7 @@ const ReverseText = () => {
             Clear
           </Button>
           <Button onClick={copyToClipboard}>Copy to Clipboard</Button>
-          <Button onClick={reverseText}>Reverse Text</Button>
+          <Button onClick={reverseText}>Convert</Button>
         </div>
       </div>
     </section>
