@@ -5,7 +5,7 @@ interface HoverCardProps {
 
 const HoverCard = ({ title, desc }: HoverCardProps) => {
   return (
-    <div className="group relative h-[240px] max-w-full rounded-md bg-secondary px-8 py-4 text-foreground">
+    <div className="group relative max-w-full rounded-md bg-secondary px-8 py-4 text-foreground">
       <div className="flex flex-col space-y-4">
         <h3 className="text-base font-semibold text-primary">Convert to</h3>
         <div className="mt-2 flex items-center gap-x-2">

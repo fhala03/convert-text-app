@@ -151,7 +151,7 @@ const ItalicText = () => {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <div className="flex flex-col items-start justify-between gap-4 border lg:flex-row lg:items-center">
+      <div className="flex flex-col items-start justify-between gap-4 lg:flex-row lg:items-center">
         <div className="flex gap-4">
           <Label className="text-sm text-foreground/50" htmlFor="inputarea">
             Word Count : {text.split(/\s+/).filter(Boolean).length}
