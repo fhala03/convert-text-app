@@ -162,7 +162,7 @@ const MorseCodeText = () => {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col items-start justify-between gap-4 border lg:flex-row lg:items-center">
         <div className="flex gap-4">
           <Label className="text-sm text-foreground/50" htmlFor="inputarea">
             Word Count: {text.split(/\s+/).filter(Boolean).length}
@@ -171,7 +171,7 @@ const MorseCodeText = () => {
             Character Count: {text.length}
           </Label>
         </div>
-        <div className="flex gap-2">
+        <div className="flex w-full lg:w-fit flex-col gap-2 lg:flex-row">
           <Button onClick={downloadTextFile}>Download Text</Button>
           <Button
             onClick={() => {

@@ -9,7 +9,7 @@ const ItalicPage = () => {
         <h1 className="flex flex-col text-5xl font-bold tracking-tight">
           Convert your text to{" "}
           <span className="bg-gradient-to-r from-primary via-background to-background bg-clip-text text-transparent">
-            Italic
+            Italic.
           </span>
         </h1>
       </section>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Cards = () => {
   return (
-    <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+    <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mb-2">
       <Link href={"/italic"}>
         <HoverCard
           title="Italic"
