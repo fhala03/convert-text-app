@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Coffee, Sparkles } from "lucide-react";
+import { Coffee } from "lucide-react";
 
 const HomePage = () => {
   return (
