@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
+import { Button } from "./ui/button";
 
 const Header = () => {
   return (
@@ -13,6 +14,11 @@ const Header = () => {
             CNVRTXT
           </Link>
         </div>
+        <Link href={"/uppercase"}>
+          <Button className="rounded-full">
+            Donate
+          </Button>
+        </Link>
       </div>
     </header>
   );

@@ -8,7 +8,7 @@ const LowercasePage = () => {
       <section>
         <h1 className="flex flex-col text-5xl font-bold tracking-tight">
           Convert your text to{" "}
-          <span className="bg-gradient-to-r from-primary via-background to-background bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 bg-clip-text text-transparent">
             Lowercase.
           </span>
         </h1>
