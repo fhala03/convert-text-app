@@ -10,7 +10,7 @@ const ReverseText = () => {
   const [text, setText] = useState("");
 
   const reverseText = () => {
-    const reversedText = text.split("").reverse().join(""); // Reverse the text
+    const reversedText = text.split("").reverse().join("");
     setText(reversedText);
 
     toast({
@@ -93,7 +93,7 @@ const ReverseText = () => {
             Character Count : {text.length}
           </Label>
         </div>
-        <div className="flex w-full lg:w-fit flex-col gap-2 lg:flex-row">
+        <div className="flex w-full flex-col gap-2 lg:w-fit lg:flex-row">
           <Button onClick={downloadTextFile}>Download Text</Button>
           <Button
             onClick={() => {
