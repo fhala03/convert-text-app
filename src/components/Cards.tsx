@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Cards = () => {
   return (
-    <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mb-2">
+    <div className="mb-2 grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
       <Link href={"/italic"}>
         <HoverCard
           title="Italic"
@@ -15,6 +15,24 @@ const Cards = () => {
         <HoverCard
           title="Morse Code"
           desc="Whether you are looking to translate morse code messages into simple english or the other way around, this online translation generator can do just that."
+        />
+      </Link>
+      <Link href={"/capitalized"}>
+        <HoverCard
+          title="Capitalized"
+          desc="The capitalized case converter will automatically convert the starting letter of every word into an upper case and will leave the remaining letters as lower case ones."
+        />
+      </Link>
+      <Link href={"/wide-text"}>
+        <HoverCard
+          title="Wide Text"
+          desc="If you are looking to widen the look of your text, the widening text generator is great for this, otherwise known as the Aesthetic Font and text generator."
+        />
+      </Link>
+      <Link href={"/lowercase"}>
+        <HoverCard
+          title="Lowercase"
+          desc="If you are wondering how to uncapitalize text, this is exactly what the lower case text converter will allow you to do - it transforms all the letters in your text into lowercase letters."
         />
       </Link>
       <Link href={"/reverse"}>
@@ -35,7 +53,7 @@ const Cards = () => {
           desc="A quick way to bold your text online. Simply type out the normal text into the tool and see it automatically get converted to the bold versio which you can copy and paste across."
         />
       </Link>
-      <Link href={"/"}>
+      <Link href={"/uppercase"}>
         <HoverCard
           title="Uppercase"
           desc="The upper case transformer will take any text that you have and will generate all the letters into upper case ones. It will essentially make all lower case letters into CAPITALS (as well as keep upper case letters as upper case letters)."
