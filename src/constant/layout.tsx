@@ -12,3 +12,12 @@ export function navbarLayout(page: JSX.Element) {
     </div>
   );
 }
+
+export function navbarLayoutWithoutCards(page: JSX.Element) {
+  return (
+    <div>
+      <Header />
+      <div className="maincol py-4">{page}</div>
+    </div>
+  );
+}

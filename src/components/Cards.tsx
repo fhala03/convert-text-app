@@ -22,7 +22,7 @@ const Cards = () => {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
     >
-      <div className="mb-2 grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+      <div className="mb-2 grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         <Link href={"/italic"}>
           <HoverCard
             icon={Italic}

@@ -7,7 +7,7 @@ const CapitalizedPage = () => {
   return (
     <>
       <Head>
-        <title>Capitalize Text | Convert Text</title>
+        <title>Capitalize Text | CONVERTEXT</title>
         <meta
           name="description"
           content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."

@@ -7,7 +7,7 @@ const MorseCodePage = () => {
   return (
     <>
       <Head>
-        <title>Morse Code Text | Convert Text</title>
+        <title>Morse Code Text | CONVERTEXT</title>
         <meta
           name="description"
           content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."

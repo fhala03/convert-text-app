@@ -11,7 +11,7 @@ const Header = () => {
       <div className="maincol flex h-14 items-center justify-between py-4">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex text-3xl font-bold tracking-tighter">
-            CNVRTXT
+            CONVERTEXT
           </Link>
         </div>
         <Link href={"/uppercase"}>
