@@ -23,70 +23,70 @@ const Cards = () => {
       initial={{ opacity: 0 }}
     >
       <div className="mb-2 grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-        <Link href={"/italic"}>
+        <Link href={"/italic-text-converter"}>
           <HoverCard
             icon={Italic}
             title="Italic"
             desc="If you want to italicise your font, this is a great tool. Type out your normal text and see it automatically write on a slant, which you can copy and paste where you want."
           />
         </Link>
-        <Link href={"/morse-code"}>
+        <Link href={"/morse-code-text-converter"}>
           <HoverCard
             icon={MoreHorizontal}
             title="Morse Code"
             desc="Whether you are looking to translate morse code messages into simple english or the other way around, this online translation generator can do just that."
           />
         </Link>
-        <Link href={"/capitalized"}>
+        <Link href={"/capitalized-text-converter"}>
           <HoverCard
             icon={ArrowBigUp}
             title="Capitalized"
             desc="The capitalized case converter will automatically convert the starting letter of every word into an upper case and will leave the remaining letters as lower case ones."
           />
         </Link>
-        <Link href={"/wide-text"}>
+        <Link href={"/wide-text-text-converter"}>
           <HoverCard
             icon={Ratio}
             title="Wide Text"
             desc="If you are looking to widen the look of your text, the widening text generator is great for this, otherwise known as the Aesthetic Font and text generator."
           />
         </Link>
-        <Link href={"/lowercase"}>
+        <Link href={"/lowercase-text-converter"}>
           <HoverCard
             icon={CaseLower}
             title="Lowercase"
             desc="If you are wondering how to uncapitalize text, this is exactly what the lower case text converter will allow you to do - it transforms all the letters in your text into lowercase letters."
           />
         </Link>
-        <Link href={"/reverse"}>
+        <Link href={"/reverse-text-converter"}>
           <HoverCard
             icon={StepBack}
             title="Reverse"
             desc="If you want a fast and quick way of making your text go back to front, the reverse text generator is great. Write out your text like normal and then see it get flipped."
           />
         </Link>
-        <Link href={"/binary"}>
+        <Link href={"/binary-text-converter"}>
           <HoverCard
             icon={Binary}
             title="Binary"
             desc="Translate binary code into English and English into binary code with the following generator. Type out regularly and get a series of 0 and 1 in return."
           />
         </Link>
-        <Link href={"/underline"}>
+        <Link href={"/underline-text-converter"}>
           <HoverCard
             icon={Underline}
             title="Underline"
             desc="Underline your text online with this underliner tool. Write out or paste across the content you want to be underlined and then you will see it automatically generated underlined - which you can copy and paste across to where you want."
           />
         </Link>
-        <Link href={"/bold"}>
+        <Link href={"/bold-text-converter"}>
           <HoverCard
             icon={Bold}
             title="Bold"
             desc="A quick way to bold your text online. Simply type out the normal text into the tool and see it automatically get converted to the bold versio which you can copy and paste across."
           />
         </Link>
-        <Link href={"/uppercase"}>
+        <Link href={"/uppercase-text-converter"}>
           <HoverCard
             icon={CaseUpper}
             title="Uppercase"
