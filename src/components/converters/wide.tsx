@@ -54,27 +54,6 @@ const WideText = () => {
       });
   };
 
-  useEffect(() => {
-    const handlePaste = async () => {
-      try {
-        const clipboardText = await navigator.clipboard.readText();
-        const wideText = clipboardText.split("").join(" ");
-        setText(wideText);
-        await navigator.clipboard.writeText(wideText);
-      } catch (error) {
-        console.error("Failed to read or write clipboard data:", error);
-      }
-    };
-
-    void handlePaste();
-
-    document.addEventListener("paste", handlePaste);
-
-    return () => {
-      document.removeEventListener("paste", handlePaste);
-    };
-  }, []);
-
   return (
     <section className="flex flex-col gap-2">
       <Textarea

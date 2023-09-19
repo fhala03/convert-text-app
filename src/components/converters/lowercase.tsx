@@ -54,27 +54,6 @@ const LowercaseText = () => {
       });
   };
 
-  useEffect(() => {
-    const handlePaste = async () => {
-      try {
-        const clipboardText = await navigator.clipboard.readText();
-        const lowercaseText = clipboardText.toLowerCase();
-        setText(lowercaseText);
-        await navigator.clipboard.writeText(lowercaseText);
-      } catch (error) {
-        console.error("Failed to read or write clipboard data:", error);
-      }
-    };
-
-    void handlePaste();
-
-    document.addEventListener("paste", handlePaste);
-
-    return () => {
-      document.removeEventListener("paste", handlePaste);
-    };
-  }, []);
-
   return (
     <section className="flex flex-col gap-2">
       <Textarea

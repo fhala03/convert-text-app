@@ -129,30 +129,6 @@ const MorseCodeText = () => {
       });
   };
 
-  useEffect(() => {
-    const handlePaste = async () => {
-      try {
-        const clipboardText = await navigator.clipboard.readText();
-        const morseCodeText = clipboardText
-          .split("")
-          .map((char) => charToMorseCode(char))
-          .join(" ");
-        setText(morseCodeText);
-        await navigator.clipboard.writeText(morseCodeText);
-      } catch (error) {
-        console.error("Failed to read or write clipboard data:", error);
-      }
-    };
-
-    void handlePaste();
-
-    document.addEventListener("paste", handlePaste);
-
-    return () => {
-      document.removeEventListener("paste", handlePaste);
-    };
-  }, []);
-
   return (
     <section className="flex flex-col gap-2">
       <Textarea
@@ -171,7 +147,7 @@ const MorseCodeText = () => {
             Character Count: {text.length}
           </Label>
         </div>
-        <div className="flex w-full lg:w-fit flex-col gap-2 lg:flex-row">
+        <div className="flex w-full flex-col gap-2 lg:w-fit lg:flex-row">
           <Button onClick={downloadTextFile}>Download Text</Button>
           <Button
             onClick={() => {

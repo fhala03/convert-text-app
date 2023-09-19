@@ -54,27 +54,6 @@ const ReverseText = () => {
       });
   };
 
-  useEffect(() => {
-    const handlePaste = async () => {
-      try {
-        const clipboardText = await navigator.clipboard.readText();
-        const reversedText = clipboardText.split("").reverse().join(""); // Reverse pasted text
-        setText(reversedText);
-        await navigator.clipboard.writeText(reversedText);
-      } catch (error) {
-        console.error("Failed to read or write clipboard data:", error);
-      }
-    };
-
-    void handlePaste();
-
-    document.addEventListener("paste", handlePaste);
-
-    return () => {
-      document.removeEventListener("paste", handlePaste);
-    };
-  }, []);
-
   return (
     <section className="flex flex-col gap-2">
       <Textarea

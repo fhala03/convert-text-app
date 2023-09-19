@@ -157,30 +157,6 @@ const UnderlinedText = () => {
       });
   };
 
-  useEffect(() => {
-    const handlePaste = async () => {
-      try {
-        const clipboardText = await navigator.clipboard.readText();
-        const underlinedText = clipboardText
-          .split("")
-          .map((char) => underlineCharacter(char))
-          .join("");
-        setText(underlinedText);
-        await navigator.clipboard.writeText(underlinedText);
-      } catch (error) {
-        console.error("Failed to read or write clipboard data:", error);
-      }
-    };
-
-    void handlePaste();
-
-    document.addEventListener("paste", handlePaste);
-
-    return () => {
-      document.removeEventListener("paste", handlePaste);
-    };
-  }, []);
-
   return (
     <section className="flex flex-col gap-2">
       <Textarea
@@ -199,7 +175,7 @@ const UnderlinedText = () => {
             Character Count : {text.length}
           </Label>
         </div>
-        <div className="flex w-full lg:w-fit flex-col gap-2 lg:flex-row">
+        <div className="flex w-full flex-col gap-2 lg:w-fit lg:flex-row">
           <Button onClick={downloadTextFile}>Download Text</Button>
           <Button
             onClick={() => {

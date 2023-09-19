@@ -133,36 +133,6 @@ const BinaryText = () => {
       });
   };
 
-  useEffect(() => {
-    const handlePaste = async () => {
-      try {
-        const clipboardText = await navigator.clipboard.readText();
-        const binaryText = clipboardText
-          .split("")
-          .map((char) => {
-            if (/[A-Za-z0-9]/.test(char)) {
-              return stylizeCharacter(char);
-            } else {
-              return char;
-            }
-          })
-          .join(" ");
-        setText(binaryText);
-        await navigator.clipboard.writeText(binaryText);
-      } catch (error) {
-        console.error("Failed to read or write clipboard data:", error);
-      }
-    };
-
-    void handlePaste();
-
-    document.addEventListener("paste", handlePaste);
-
-    return () => {
-      document.removeEventListener("paste", handlePaste);
-    };
-  }, []);
-
   return (
     <section className="flex flex-col gap-2">
       <Textarea

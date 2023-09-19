@@ -58,31 +58,6 @@ const CapitalizeText = () => {
       });
   };
 
-  useEffect(() => {
-    const handlePaste = async () => {
-      try {
-        const clipboardText = await navigator.clipboard.readText();
-        const words = clipboardText.split(" ");
-        const capitalizedWords = words.map((word) => {
-          return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-        });
-        const capitalizedText = capitalizedWords.join(" ");
-        setText(capitalizedText);
-        await navigator.clipboard.writeText(capitalizedText);
-      } catch (error) {
-        console.error("Failed to read or write clipboard data:", error);
-      }
-    };
-
-    void handlePaste();
-
-    document.addEventListener("paste", handlePaste);
-
-    return () => {
-      document.removeEventListener("paste", handlePaste);
-    };
-  }, []);
-
   return (
     <section className="flex flex-col gap-2">
       <Textarea

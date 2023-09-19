@@ -156,30 +156,6 @@ const BoldText = () => {
       });
   };
 
-  useEffect(() => {
-    const handlePaste = async () => {
-      try {
-        const clipboardText = await navigator.clipboard.readText();
-        const boldifiedText = clipboardText
-          .split("")
-          .map((char) => boldifyCharacter(char))
-          .join("");
-        setText(boldifiedText);
-        await navigator.clipboard.writeText(boldifiedText);
-      } catch (error) {
-        console.error("Failed to read or write clipboard data:", error);
-      }
-    };
-
-    void handlePaste();
-
-    document.addEventListener("paste", handlePaste);
-
-    return () => {
-      document.removeEventListener("paste", handlePaste);
-    };
-  }, []);
-
   return (
     <section className="flex flex-col gap-2">
       <Textarea
