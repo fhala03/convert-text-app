@@ -30,6 +30,15 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
           name="description"
           content="Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online"
         />
+        <meta property="og:title" content="CONVERTEXT | Convert Text" />
+        <meta
+          property="og:description"
+          content="Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online"
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
