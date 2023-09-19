@@ -23,7 +23,7 @@ const UppercaseTextPage = () => {
         />
         <meta
           property="og:image"
-          content="https://convert-text-app.vercel.app/seo.png"
+          content="https://convert-text-app.vercel.app/background.png"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -13,6 +13,18 @@ const BinaryPage = () => {
           content="Translate binary code into English and English into binary code with the following generator. Type out regularly and get a series of 0 and 1 in return."
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          property="og:title"
+          content="Binary Text Converter | CONVERTEXT"
+        />
+        <meta
+          property="og:description"
+          content="Translate binary code into English and English into binary code with the following generator. Type out regularly and get a series of 0 and 1 in return."
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
       </Head>
 
       <div className="mb-4 flex flex-col gap-6">
