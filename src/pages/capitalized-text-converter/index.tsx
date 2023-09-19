@@ -7,10 +7,10 @@ const CapitalizedPage = () => {
   return (
     <>
       <Head>
-        <title>Capitalize Text | CONVERTEXT</title>
+        <title>Capitalize Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="The capitalized case converter will automatically convert the starting letter of every word into an upper case and will leave the remaining letters as lower case ones."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

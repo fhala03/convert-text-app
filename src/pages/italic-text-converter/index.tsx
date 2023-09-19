@@ -7,10 +7,10 @@ const ItalicPage = () => {
   return (
     <>
       <Head>
-        <title>Italic Text | CONVERTEXT</title>
+        <title>Italic Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="If you want to italicise your font, this is a great tool. Type out your normal text and see it automatically write on a slant, which you can copy and paste where you want."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

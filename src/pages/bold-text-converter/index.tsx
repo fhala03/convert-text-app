@@ -7,10 +7,10 @@ const BoldPage = () => {
   return (
     <>
       <Head>
-        <title>Bold Text | CONVERTEXT</title>
+        <title>Bold Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="A quick way to bold your text online. Simply type out the normal text into the tool and see it automatically get converted to the bold versio which you can copy and paste across."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -7,10 +7,10 @@ const MorseCodePage = () => {
   return (
     <>
       <Head>
-        <title>Morse Code Text | CONVERTEXT</title>
+        <title>Morse Code Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="Whether you are looking to translate morse code messages into simple english or the other way around, this online translation generator can do just that."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

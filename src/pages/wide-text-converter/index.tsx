@@ -7,10 +7,10 @@ const WideTextPage = () => {
   return (
     <>
       <Head>
-        <title>Wide Text | CONVERTEXT</title>
+        <title>Wide Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="If you are looking to widen the look of your text, the widening text generator is great for this, otherwise known as the Aesthetic Font and text generator."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

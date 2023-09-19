@@ -7,10 +7,10 @@ const ReversePage = () => {
   return (
     <>
       <Head>
-        <title>Reverse Text Text | CONVERTEXT</title>
+        <title>Reverse Text Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="If you want a fast and quick way of making your text go back to front, the reverse text generator is great. Write out your text like normal and then see it get flipped."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

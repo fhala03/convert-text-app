@@ -7,10 +7,10 @@ const UppercaseTextPage = () => {
   return (
     <>
       <Head>
-        <title>Uppercase Text | CONVERTEXT</title>
+        <title>Uppercase Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="The upper case transformer will take any text that you have and will generate all the letters into upper case ones. It will essentially make all lower case letters into CAPITALS (as well as keep upper case letters as upper case letters)"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

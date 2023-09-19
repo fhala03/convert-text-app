@@ -44,7 +44,7 @@ const Cards = () => {
             desc="The capitalized case converter will automatically convert the starting letter of every word into an upper case and will leave the remaining letters as lower case ones."
           />
         </Link>
-        <Link href={"/wide-text-text-converter"}>
+        <Link href={"/wide-text-converter"}>
           <HoverCard
             icon={Ratio}
             title="Wide Text"

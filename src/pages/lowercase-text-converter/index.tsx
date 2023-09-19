@@ -7,10 +7,10 @@ const LowercasePage = () => {
   return (
     <>
       <Head>
-        <title>Lowercase Text | CONVERTEXT</title>
+        <title>Lowercase Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="If you are wondering how to uncapitalize text, this is exactly what the lower case text converter will allow you to do - it transforms all the letters in your text into lowercase letters."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

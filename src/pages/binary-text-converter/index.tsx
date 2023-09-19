@@ -7,10 +7,10 @@ const BinaryPage = () => {
   return (
     <>
       <Head>
-        <title>Binary Text | CONVERTEXT</title>
+        <title>Binary Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="Translate binary code into English and English into binary code with the following generator. Type out regularly and get a series of 0 and 1 in return."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

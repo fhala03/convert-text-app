@@ -7,10 +7,10 @@ const UnderlinePage = () => {
   return (
     <>
       <Head>
-        <title>Underline Text | CONVERTEXT</title>
+        <title>Underline Text Converter | CONVERTEXT</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="Underline your text online with this underliner tool. Write out or paste across the content you want to be underlined and then you will see it automatically generated underlined - which you can copy and paste across to where you want."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
