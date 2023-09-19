@@ -12,6 +12,15 @@ const BoldPage = () => {
           name="description"
           content="A quick way to bold your text online. Simply type out the normal text into the tool and see it automatically get converted to the bold versio which you can copy and paste across."
         />
+        <meta property="og:title" content="Bold Text Converter | CONVERTEXT" />
+        <meta
+          property="og:description"
+          content="A quick way to bold your text online. Simply type out the normal text into the tool and see it automatically get converted to the bold versio which you can copy and paste across."
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

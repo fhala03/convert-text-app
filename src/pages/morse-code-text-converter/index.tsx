@@ -12,6 +12,18 @@ const MorseCodePage = () => {
           name="description"
           content="Whether you are looking to translate morse code messages into simple english or the other way around, this online translation generator can do just that."
         />
+        <meta
+          property="og:title"
+          content="Morse Code Text Converter | CONVERTEXT"
+        />
+        <meta
+          property="og:description"
+          content="Whether you are looking to translate morse code messages into simple english or the other way around, this online translation generator can do just that."
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

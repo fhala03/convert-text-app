@@ -12,6 +12,18 @@ const ReversePage = () => {
           name="description"
           content="If you want a fast and quick way of making your text go back to front, the reverse text generator is great. Write out your text like normal and then see it get flipped."
         />
+        <meta
+          property="og:title"
+          content="Reverse Text Text Converter | CONVERTEXT"
+        />
+        <meta
+          property="og:description"
+          content="If you want a fast and quick way of making your text go back to front, the reverse text generator is great. Write out your text like normal and then see it get flipped."
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

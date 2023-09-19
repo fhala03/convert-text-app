@@ -12,6 +12,18 @@ const ItalicPage = () => {
           name="description"
           content="If you want to italicise your font, this is a great tool. Type out your normal text and see it automatically write on a slant, which you can copy and paste where you want."
         />
+        <meta
+          property="og:title"
+          content="Italic Text Converter | CONVERTEXT"
+        />
+        <meta
+          property="og:description"
+          content="If you want to italicise your font, this is a great tool. Type out your normal text and see it automatically write on a slant, which you can copy and paste where you want."
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -12,6 +12,18 @@ const LowercasePage = () => {
           name="description"
           content="If you are wondering how to uncapitalize text, this is exactly what the lower case text converter will allow you to do - it transforms all the letters in your text into lowercase letters."
         />
+        <meta
+          property="og:title"
+          content="Lowercase Text Converter | CONVERTEXT"
+        />
+        <meta
+          property="og:description"
+          content="If you are wondering how to uncapitalize text, this is exactly what the lower case text converter will allow you to do - it transforms all the letters in your text into lowercase letters."
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -13,6 +13,15 @@ const WideTextPage = () => {
           content="If you are looking to widen the look of your text, the widening text generator is great for this, otherwise known as the Aesthetic Font and text generator."
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Wide Text Converter | CONVERTEXT" />
+        <meta
+          property="og:description"
+          content="If you are looking to widen the look of your text, the widening text generator is great for this, otherwise known as the Aesthetic Font and text generator."
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
       </Head>
 
       <div className="mb-4 flex flex-col gap-6">

@@ -25,10 +25,19 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <>
       <Head>
-        <title>CONVERTEXT</title>
+        <title>CONVERTEXT | Convert Text</title>
         <meta
           name="description"
-          content="CNVRTXT is a simple web app that allows you to convert your text. App is built with the T3 stack."
+          content="Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online"
+        />
+        <meta property="og:title" content="CONVERTEXT | Convert Text" />
+        <meta
+          property="og:description"
+          content="Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online"
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -12,6 +12,18 @@ const CapitalizedPage = () => {
           name="description"
           content="The capitalized case converter will automatically convert the starting letter of every word into an upper case and will leave the remaining letters as lower case ones."
         />
+        <meta
+          property="og:title"
+          content="Capitalize Text Converter | CONVERTEXT"
+        />
+        <meta
+          property="og:description"
+          content="The capitalized case converter will automatically convert the starting letter of every word into an upper case and will leave the remaining letters as lower case ones."
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
