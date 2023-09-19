@@ -12,6 +12,7 @@ const UnderlinePage = () => {
           name="description"
           content="Underline your text online with this underliner tool. Write out or paste across the content you want to be underlined and then you will see it automatically generated underlined - which you can copy and paste across to where you want."
         />
+        <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:title"
           content="Underline Text Converter | CONVERTEXT"
@@ -24,7 +25,6 @@ const UnderlinePage = () => {
           property="og:image"
           content="https://convert-text-app.vercel.app/background.png"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="mb-4 flex flex-col gap-6">
