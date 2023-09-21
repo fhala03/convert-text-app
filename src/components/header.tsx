@@ -30,9 +30,13 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex gap-4">
-          <Link href={"/https://www.buymeacoffee.com/whiselyprop"}>
+          <a
+            href={"/https://www.buymeacoffee.com/whiselyprop"}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button className="rounded-full">Donate</Button>
-          </Link>
+          </a>
           <ModeToggle />
         </div>
       </div>
