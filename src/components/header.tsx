@@ -30,7 +30,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex gap-4">
-          <Link href={"/uppercase"}>
+          <Link href={"/https://www.buymeacoffee.com/whiselyprop"}>
             <Button className="rounded-full">Donate</Button>
           </Link>
           <ModeToggle />
