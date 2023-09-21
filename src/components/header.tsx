@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import useScroll from "@/hooks/useScroll";
+import { ModeToggle } from "./toggleTheme";
 
 const Header = () => {
   const scrolled = useScroll(30);
@@ -10,18 +11,30 @@ const Header = () => {
   return (
     <header
       className={cn(`sticky inset-x-0 top-0 z-30 w-full transition-all`, {
-        "border-b border-gray-200 bg-white": scrolled,
+        "border-b border-muted bg-background": scrolled,
       })}
     >
       <div className="maincol flex h-14 items-center justify-between py-4">
         <div className="flex items-center gap-8">
-          <Link href="/" className="flex text-3xl font-bold tracking-tighter">
+          <Link
+            href="/"
+            className="hidden text-3xl font-bold tracking-tighter sm:flex"
+          >
             CONVERTEXT
           </Link>
+          <Link
+            href="/"
+            className="flex text-3xl font-bold tracking-tighter sm:hidden"
+          >
+            CNVRTXT
+          </Link>
         </div>
-        <Link href={"/uppercase"}>
-          <Button className="rounded-full">Donate</Button>
-        </Link>
+        <div className="flex gap-4">
+          <Link href={"/uppercase"}>
+            <Button className="rounded-full">Donate</Button>
+          </Link>
+          <ModeToggle />
+        </div>
       </div>
     </header>
   );

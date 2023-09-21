@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import type { ReactElement, ReactNode } from "react";
 import type { NextPage } from "next";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export type NextPageWithLayout<P = NonNullable<unknown>, IP = P> = NextPage<
   P,
@@ -41,9 +42,15 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {layoutForPage(<Component {...pageProps} />)}
-      <Toaster />
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        {layoutForPage(<Component {...pageProps} />)}
+        <Toaster />
+      </ThemeProvider>
     </>
   );
 }

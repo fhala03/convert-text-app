@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>CONVERTEXT</title>
+        <title>CONVERTEXT | Convert Text</title>
         <meta
           name="description"
           content="Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online"

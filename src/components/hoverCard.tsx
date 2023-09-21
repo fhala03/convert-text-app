@@ -9,7 +9,7 @@ interface HoverCardProps {
 
 const HoverCard = ({ title, desc, icon: Icon }: HoverCardProps) => {
   return (
-    <div className="group relative max-w-full h-[270px] rounded-md bg-secondary px-8 py-4 text-foreground transition-transform hover:scale-105">
+    <div className="group relative w-full  max-w-full rounded-md bg-secondary px-8 py-4 text-foreground transition-transform hover:scale-105 md:h-[270px]">
       <div className="flex flex-col space-y-4">
         <h3 className="text-base font-semibold text-primary">Convert to</h3>
         <div className="mt-2 flex items-center gap-x-2">
@@ -23,7 +23,7 @@ const HoverCard = ({ title, desc, icon: Icon }: HoverCardProps) => {
         <p className="mt-6 text-sm font-medium leading-6">{desc}</p>
       </div>
 
-      <div className="absolute left-0 top-0 h-full w-[4px] bg-gradient-to-t from-pink-300 via-purple-300 to-indigo-400"></div>
+      <div className="absolute left-0 top-0 h-full w-[4px] bg-gradient-to-t from-secondary via-primary to-primary"></div>
     </div>
   );
 };
