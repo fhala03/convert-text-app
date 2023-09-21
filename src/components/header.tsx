@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         <div className="flex gap-4">
           <a
-            href={"/https://www.buymeacoffee.com/whiselyprop"}
+            href="https://www.buymeacoffee.com/whiselyprop"
             target="_blank"
             rel="noreferrer"
           >
