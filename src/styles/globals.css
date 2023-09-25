@@ -13,7 +13,7 @@
     /* background-color: #fafafa; */
   }
 
-  /* body::before {
+  .dark::before {
     content: "";
     background-image: url("/gradient.png");
     z-index: -1;
@@ -35,7 +35,7 @@
     filter: blur(100px) saturate(2);
     top: 0;
     opacity: 0.1;
-  } */
+  }
 
   :root {
     --background: 0 0% 100%;
