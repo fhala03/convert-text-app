@@ -19,6 +19,9 @@ CNVRTXT is a simple web app that allows you to easily convert text between diffe
 - Full responsiveness
 - Folder structure in Next 13 Pages Router
 
+
+![App Screenshot](https://cdn.discordapp.com/attachments/810259639623090267/1172588017987358820/Screenshot_2023-11-10_at_18.25.48.png?ex=6560dcb1&is=654e67b1&hm=61ea379a93f2beb9235abf49871cdce512cd40864bfa6f02ac7c22d194816582&)
+
 ## Run Locally
 
 Clone the project
